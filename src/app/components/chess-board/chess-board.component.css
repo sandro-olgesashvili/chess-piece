@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 570px;
+}
+
+.item {
+  width: 70px;
+  height: 70px;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.item:nth-child(-2n+8), 
+.item:nth-child(8) ~ .item:nth-child(-2n+15), 
+.item:nth-child(16) ~ .item:nth-child(-2n+24),
+.item:nth-child(24) ~ .item:nth-child(-2n+31),
+.item:nth-child(32) ~ .item:nth-child(-2n+40),
+.item:nth-child(40) ~ .item:nth-child(-2n+47),
+.item:nth-child(48) ~ .item:nth-child(-2n+56),
+.item:nth-child(56) ~ .item:nth-child(-2n+63) {
+    background-color: black;
+}
+
+
+.bg-active {
+  background-color: rgba(255, 0, 0, 0.753) !important;
+}
+
