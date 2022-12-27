@@ -16,6 +16,14 @@
   transition: all 0.5s;
   border: none;
 }
+.horse {
+  background-image: url("../src/assets/horse.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.5s;
+  border: none;
+}
 
 .king:hover {
   transform: scale(1.1);

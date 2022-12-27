@@ -12,7 +12,7 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  color: red;
+  color: blue;
 }
 
 .item:nth-child(-2n+8), 

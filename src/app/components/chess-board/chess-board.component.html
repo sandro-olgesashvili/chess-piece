@@ -3,50 +3,61 @@
     *ngFor="let item of board"
     [ngClass]="{
       'bg-active':
-        item === ind + 1 &&
+        item === ind + 10 &&
         onOff &&
-        item !== board[8] &&
         item !== board[16] &&
+        item !== board[17] &&
         item !== board[24] &&
+        item !== board[25] &&
         item !== board[32] &&
+        item !== board[33] &&
         item !== board[40] &&
+        item !== board[41] &&
         item !== board[48] &&
+        item !== board[49] &&
         item !== board[56] &&
-        item !== board[64]
+        item !== board[57]
     }"
     [ngClass]="{
       'bg-active':
-        item === ind - 1 &&
+        item === ind - 10 &&
+        onOff &&
+        item !== board[6] &&
+        item !== board[7] &&
+        item !== board[14] &&
+        item !== board[15] &&
+        item !== board[22] &&
+        item !== board[23] &&
+        item !== board[30] &&
+        item !== board[31] &&
+        item !== board[38] &&
+        item !== board[39] &&
+        item !== board[46] &&
+        item !== board[47]
+    }"
+    [ngClass]="{
+      'bg-active':
+        item === ind + 17 &&
+        onOff &&
+        item !== board[24] &&
+        item !== board[32] &&
+        item !== board[40] &&
+        item !== board[48] &&
+        item !== board[56] 
+    }"
+    [ngClass]="{
+      'bg-active':
+        item === ind - 17 &&
         onOff &&
         item !== board[7] &&
         item !== board[15] &&
         item !== board[23] &&
         item !== board[31] &&
-        item !== board[39] &&
-        item !== board[47] &&
-        item !== board[55] &&
-        item !== board[63]
-    }"
-    [ngClass]="{
-      'bg-active': item === ind + 8 && onOff
-    }"
-    [ngClass]="{ 'bg-active': item === ind - 8 && onOff }"
-    [ngClass]="{
-      'bg-active':
-        item === ind + 7 &&
-        onOff &&
-        item !== board[7] &&
-        item !== board[15] &&
-        item !== board[23] &&
-        item !== board[31] &&
-        item !== board[39] &&
-        item !== board[47] &&
-        item !== board[55] &&
-        item !== board[63]
+        item !== board[39]
     }"
     [ngClass]="{
       'bg-active':
-        item === ind - 7 &&
+        item === ind - 15 &&
         onOff &&
         item !== board[0] &&
         item !== board[8] &&
@@ -54,25 +65,53 @@
         item !== board[24] &&
         item !== board[32] &&
         item !== board[40] &&
-        item !== board[48] &&
-        item !== board[56]
+        item !== board[48]
     }"
     [ngClass]="{
       'bg-active':
-        item === ind + 9 &&
+        item === ind - 6 &&
         onOff &&
         item !== board[0] &&
+        item !== board[1] &&
         item !== board[8] &&
+        item !== board[9] &&
         item !== board[16] &&
+        item !== board[17] &&
         item !== board[24] &&
+        item !== board[25] &&
         item !== board[32] &&
+        item !== board[33] &&
         item !== board[40] &&
+        item !== board[41] &&
         item !== board[48] &&
-        item !== board[56]
+        item !== board[49] &&
+        item !== board[56] &&
+        item !== board[57]
     }"
     [ngClass]="{
       'bg-active':
-        item === ind - 9 &&
+        item === ind + 6 &&
+        onOff &&
+        item !== board[6] &&
+        item !== board[7] &&
+        item !== board[14] &&
+        item !== board[15] &&
+        item !== board[22] &&
+        item !== board[23] &&
+        item !== board[30] &&
+        item !== board[31] &&
+        item !== board[38] &&
+        item !== board[39] &&
+        item !== board[46] &&
+        item !== board[47] &&
+        item !== board[54] &&
+        item !== board[55] &&
+        item !== board[62] &&
+        item !== board[63]
+    }"
+    [ngClass]="{
+      'bg-active':
+        item === ind + 15 &&
         onOff &&
         item !== board[7] &&
         item !== board[15] &&
@@ -81,10 +120,16 @@
         item !== board[39] &&
         item !== board[47] &&
         item !== board[55] &&
-        item !== board[63]
+        item !== board[63] &&
+        item !== board[24] &&
+        item !== board[32] &&
+        item !== board[40] &&
+        item !== board[48] &&
+        item !== board[56]
     }"
     class="item"
-    [ngClass]="item === ind ? 'king' : ''"
+    [ngClass]="item === ind ? 'horse' : ''"
     (click)="change(item)"
-  >{{item}}</div>
+  >
+  </div>
 </div>
